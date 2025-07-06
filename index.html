@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="NATURES – Amplifying African Voices in Environment & Science Journalism" />
+  <title>NATURES | Amplifying Voices, Reporting Nature</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fffaf3;
+      color: #3e2f1c;
+    }
+    .logo span {
+      font-weight: bold;
+      color: #1b5e20;
+    }
+    .bg-earth {
+      background-color: #1b5e20;
+    }
+    .text-earth {
+      color: #1b5e20;
+    }
+    .text-ochre {
+      color: #d97706;
+    }
+    .bg-ochre {
+      background-color: #d97706;
+    }
+    .bg-sunset {
+      background-color: #fb923c;
+    }
+    .bg-skyblue {
+      background-color: #0284c7;
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-800">
+
+  <!-- HEADER -->
+  <header class="bg-earth text-white p-4 shadow-lg">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-2xl logo">NATURES <span>– Network of African Talent</span></h1>
+      <nav class="space-x-4 hidden md:flex">
+        <a href="#" class="hover:text-ochre">Home</a>
+        <a href="#about" class="hover:text-ochre">Who We Are</a>
+        <a href="#news" class="hover:text-ochre">News</a>
+        <a href="#features" class="hover:text-ochre">Features</a>
+        <a href="#investigations" class="hover:text-ochre">Investigations</a>
+        <a href="#kids" class="hover:text-ochre">NATURES Kids</a>
+        <a href="#documentaries" class="hover:text-ochre">Documentaries</a>
+        <a href="#live" class="hover:text-ochre">Live</a>
+        <a href="#donate" class="hover:text-ochre">Donate</a>
+        <a href="#contact" class="hover:text-ochre">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO IMAGE SLIDER -->
+  <section class="relative h-[500px]">
+    <div class="swiper-container h-full">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide bg-cover bg-center h-[500px]" style="background-image: url('https://source.unsplash.com/1600x900/?africa,environment');"></div>
+        <div class="swiper-slide bg-cover bg-center h-[500px]" style="background-image: url('https://source.unsplash.com/1600x900/?climatechange,africa');"></div>
+        <div class="swiper-slide bg-cover bg-center h-[500px]" style="background-image: url('https://source.unsplash.com/1600x900/?wildlife,kenya');"></div>
+      </div>
+    </div>
+    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+      <div class="text-center text-white px-10">
+        <h2 class="text-4xl md:text-5xl font-bold mb-4 text-ochre">Amplifying Voices, Reporting Nature</h2>
+        <p class="text-xl text-skyblue-300">Africa’s voice in science, conservation and climate storytelling</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Other sections omitted here for brevity -->
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      loop: true,
+      autoplay: {
+        delay: 5000,
+      },
+      effect: 'fade'
+    });
+  </script>
+</body>
+</html>
